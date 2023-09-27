@@ -1,7 +1,6 @@
-# Program to find the cofactor of a boolean expression with respect to a term
 
 """
-Input format is SoP and COMPLIMENTED literal is represented BY UPPER CASE and UNCOMPLEMENTED literal is represented BY LOWER CASE.
+Input format of the function expression is SoP and COMPLIMENTED literal is represented BY UPPER CASE and UNCOMPLEMENTED literal is represented BY LOWER CASE.
 Example: A'B'C + A'BC + AB'C + ABC
 Enter the expression: ABc+Abc+aBc+abc
 
@@ -16,6 +15,32 @@ Operation codes:
 2. bool_difference: 2
 3. consensus: 3
 4. smoothing: 4
+
+
+Example1:
+Enter the operation code: 1
+Enter the expression: ABc+Abc+aBc+abc
+Enter the term with respect to which cofactor has to be found: a
+Cofactor of the expression with respect to the term is:  Bc+bc
+
+Example2:
+Enter the operation code: 2
+Enter the expression: ABc+Abc+aBc+abc
+Enter the term with respect to which bool_difference has to be found: a
+Bool_difference of the expression with respect to the term is:  0
+
+Example3:
+Enter the operation code: 3
+Enter the expression: ABc+Abc+aBc+abc
+Enter the term with respect to which consensus has to be found: a
+Consensus of the expression with respect to the term is:  Bc+bc
+
+Example4:
+Enter the operation code: 4
+Enter the expression: ABc+Abc+aBc+abc
+Enter the term with respect to which smoothing has to be found: a
+Smoothing of the expression with respect to the term is:  cB+cb
+
 
 """
 
