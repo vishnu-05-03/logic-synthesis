@@ -1,5 +1,9 @@
 
 """
+Team Members:
+1. M N Vishnu (211EC229)
+2. Keerthi Bhushan M (211EC226)
+
 Input format of the function expression is SoP and COMPLIMENTED literal is represented BY UPPER CASE and UNCOMPLEMENTED literal is represented BY LOWER CASE.
 Example: A'B'C + A'BC + AB'C + ABC
 Enter the expression: ABc+Abc+aBc+abc
