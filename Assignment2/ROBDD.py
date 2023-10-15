@@ -1,8 +1,6 @@
 # Program to find the ROBDD of a given boolean expression and order of variables
 
 """
-Write a long documentation here
-
 Name: ROBDD.py
 Author: M N Vishnu (211EC229), Keerthi Bhushan M (211EC226)
 Description: Program to find the ROBDD of a given boolean expression and order of variables
