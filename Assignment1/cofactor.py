@@ -301,3 +301,4 @@ if __name__ == "__main__":
             print("Smoothing of the expression with respect to the term is: ", smoothing(f,wrt))
         case _:
             print("Invalid operation code")
+        
