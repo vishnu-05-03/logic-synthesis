@@ -1,3 +1,21 @@
+# Sat Apr 10 15:30:00 2021
+# Program to find the prime implicants of a function given Fon and Fdc all in string format
+
+"""
+File: BLOCKING_MATRIX_EXPAND.py
+Author: M N Vishnu (211EC229)
+Description: Program to find the prime implicants of a function given Fon and Fdc all in string format
+
+Input format is SoP and COMPLIMENTED literal is represented BY UPPER CASE and UNCOMPLEMENTED literal is represented BY LOWER CASE.
+Example: A'B'C + A'BC + AB'C + ABC
+Note: The input should be in the STRING format only.
+Example:
+    Enter Fon: 'WXZ+xz+XyZ+WxyZ+WYZ'
+    Enter Fdc: ''
+    Prime Implicants: 
+    WxZ+XyZ+WYZ+Xz
+"""
+
 import numpy as np
 
 def AND(f1, f2):
