@@ -10,10 +10,10 @@ Input format is SoP and COMPLIMENTED literal is represented BY UPPER CASE and UN
 Example: A'B'C + A'BC + AB'C + ABC
 Note: The input should be in the STRING format only.
 Example:
-    Enter Fon: 'WXZ+xz+XyZ+WxyZ+WYZ'
-    Enter Fdc: ''
+    Enter Fon: 'WXZ+xz+XyZ+WxyZ'
+    Enter Fdc: 'WYZ'
     Prime Cover: 
-    {Wxz, WYZ, XyZ, xz}
+    {Wx, XyZ, xz, WZ}
 """
 
 import numpy as np
@@ -152,9 +152,9 @@ def NOT(f):
         # f[i] = AND(str1, str2)
     
     if F == '0':
-        return '1'
-    elif F == '1':
         return '0'
+    elif F == '1':
+        return '1'
 
     f = F.split("+")
     f = [list(i) for i in f]
@@ -277,10 +277,23 @@ def blocking_matrix(Foff, expand_cube):
 # function to find the prime implicants of a function given Fon, Fdc and Foff all in string format
 # input: Fon and Fdc in string format. example: 'WXZ+xz+XyZ+WxyZ+WYZ', ''
 def Prime_implicants(Fon,Fdc):
+    
+    if Fon == '0':
+        return '{'+'0'+'}'
+    elif Fon == '1':
+        return '{'+'1'+'}'
+
+
     if Fdc != '':
         Foff = NOT(Fon + '+' + Fdc)
     else:
         Foff = NOT(Fon)
+
+    
+    if Foff == '0':
+        return '{'+'1'+'}'
+    elif Foff == '1':
+        return '{'+'0'+'}'
 
     Fon_cubelist = Fon.split('+')
 
