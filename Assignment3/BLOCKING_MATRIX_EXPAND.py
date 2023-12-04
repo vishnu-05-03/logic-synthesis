@@ -12,8 +12,8 @@ Note: The input should be in the STRING format only.
 Example:
     Enter Fon: 'WXZ+xz+XyZ+WxyZ+WYZ'
     Enter Fdc: ''
-    Prime Implicants: 
-    WxZ+XyZ+WYZ+Xz
+    Prime Cover: 
+    {Wxz, WYZ, XyZ, xz}
 """
 
 import numpy as np
