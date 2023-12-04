@@ -309,9 +309,10 @@ def Prime_implicants(Fon,Fdc):
 
     for i in Prime_implicants_list:
         Prime_implicants += "".join(i)
-        Prime_implicants += "+"
+        Prime_implicants += ", "
 
-    Prime_implicants = Prime_implicants.rstrip("+")
+    Prime_implicants = Prime_implicants.rstrip(', ')
+    Prime_implicants = '{' + Prime_implicants + '}'
 
     return Prime_implicants
 
@@ -319,5 +320,5 @@ def Prime_implicants(Fon,Fdc):
 if __name__ == "__main__":
     Fon = input("Enter Fon: ")
     Fdc = input("Enter Fdc: ")
-    print("Prime Implicants: ")
+    print("Prime Cover: ")
     print(Prime_implicants(Fon, Fdc))
